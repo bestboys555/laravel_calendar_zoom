@@ -9,6 +9,7 @@
 
 ## Laravel package for Zoom API
 <a href="https://github.com/MacsiDigital/laravel-zoom" target="_blank">https://github.com/MacsiDigital/laravel-zoom</a>
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/macsidigital/laravel-zoom.svg?style=flat-square)](https://packagist.org/packages/macsidigital/laravel-zoom)
 [![Build Status](https://img.shields.io/travis/macsidigital/laravel-zoom/master.svg?style=flat-square)](https://travis-ci.org/MacsiDigital/laravel-zoom)
 [![StyleCI](https://github.styleci.io/repos/193588988/shield?branch=master)](https://github.styleci.io/repos/193588988)
@@ -27,7 +28,9 @@ config Mysql connection to your connection database
 `php artisan migrate`
 
 `php artisan db:seed --class=PermissionTableSeeder`
+
 `php artisan db:seed --class=CreateAdminUserSeeder`
+
 `php artisan db:seed --class=GeneralSettingsTableSeeder`
 
 `php artisan storage:link`
@@ -37,15 +40,20 @@ config .env APP_URL=...  change it to real URL of your app
 
 on
 `vendor\macsidigital\laravel-api-client\src\Support\Builder.php`
+
 change 
+
 `throw new HttpException($response->status(), $this->prepareHttpErrorMessage($response));`
+
 to 
 `return false;`
 
 `php artisan key:generate`
 
 http://127.0.0.1:8000/login
+
 user:admin@gmail.com
+
 pass:123456
 
 ## Create and Config Zoom api
