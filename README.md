@@ -35,7 +35,8 @@ config Mysql connection to your connection database
 
 `php artisan storage:link`
 
-##Fix code
+For versioning:-
+
 config .env APP_URL=...  change it to real URL of your app 
 
 on
