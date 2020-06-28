@@ -44,6 +44,8 @@ on
 
 change 
 
+<p align="center"><img src="https://raw.githubusercontent.com/bestboys555/laravel_calendar_zoom/master/public/images/exe/error.jpg" width="800"></p>
+
 `throw new HttpException($response->status(), $this->prepareHttpErrorMessage($response));`
 
 to 
